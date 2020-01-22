@@ -8,4 +8,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;<div>Cart</div>
+export default Cart;

@@ -8,4 +8,4 @@ const Default = () => {
     );
 };
 
-export default Default;<div>Page Not Found</div>
+export default Default;

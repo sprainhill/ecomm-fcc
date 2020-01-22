@@ -10,4 +10,3 @@ const Product = () => {
 };
 
 export default Product;
-<div>Product</div>
