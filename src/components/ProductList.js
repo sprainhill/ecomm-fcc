@@ -3,9 +3,16 @@ import Product from "./Product"
 
 const ProductList = () => {
     return (
-        <div>
-            <Product />
+        <>
+        <div className="py-5">
+            <div className="container">
+                <div className="row" >
+                    Products
+                </div>
+            </div>
+
         </div>
+        </>
     );
 };
 
