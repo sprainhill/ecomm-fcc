@@ -7,7 +7,7 @@ export default () => {
     return (
         <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
             <Link to="/" >
-            <i class="fas fa-book" style={{color: "fuchsia"}}></i>
+            <i className="fas fa-book"></i>
             </Link>
             <ul className="navbar-nav align-items-center">
                 <li className="nav-item ml-5">
