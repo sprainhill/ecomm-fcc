@@ -15,10 +15,10 @@ const ProductList = () => {
             <div className="container">
                     <Title name="our" title="title" />
             </div>
-            <div className="row" >
+            <div className="row" style={{border:"1px solid red"}} >
                 <ProductConsumer>
                     {value=> {
-                    return <h3>{value}</h3>
+                    return <div>{value}</div>
 
                     }}
                 </ProductConsumer>
