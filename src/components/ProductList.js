@@ -15,7 +15,7 @@ const ProductList = () => {
             <div className="container">
                     <Title name="our" title="title" />
             </div>
-            <div className="row" style={{border:"1px solid red"}} >
+            <div className="row ml-5" >
                 <ProductConsumer>
                     {value=> {
                     return <div>{value}</div>
