@@ -13,11 +13,22 @@ class ProductProvider extends React.Component {
         detailProduct
     }
 
+    handleDetail = () => {
+        console.log("hello from handleDetail")
+    }
+
+    addToCart = () => {
+        console.log("hello from addToCart")
+    }
+
 
 
     render() {
         return (
-            <ProductContext.Provider value={{}}>
+            <ProductContext.Provider value={{
+                ...this.state
+                
+            }}>
                 {this.props.children}
             </ProductContext.Provider>
         )
