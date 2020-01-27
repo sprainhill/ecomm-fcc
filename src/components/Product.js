@@ -8,7 +8,12 @@ export default props => {
 
     return (
         <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3">
-            <div>Product</div>
+            <div className="card">
+                <div className="img-container p-5" onClick={console.log("clicked")}>
+                <Link to='/details'>
+                    <img src={img} alt="product" className="card-img-top" />                </Link>
+                </div>
+            </div>
         </ProductWrapper>
     );
 };
