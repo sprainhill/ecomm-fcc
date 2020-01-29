@@ -2,6 +2,7 @@ import React from 'react';
 import { ProductConsumer } from '../context'
 import { Link } from 'react-router-dom'
 import ButtonContainer from './Button'
+import { Button } from 'react-bootstrap';
 
 const Details = () => {
     return (
@@ -31,6 +32,9 @@ const Details = () => {
                             back to products
                         </ButtonContainer>
                     </Link>
+                    <ButtonContainer disabled={inCart ? true : false} onClick={() => value.addToCart(id)}>
+                        {inCart ? "in cart" : "add to cart"}
+                    </ButtonContainer>
 
                 </div>
                     </div>
