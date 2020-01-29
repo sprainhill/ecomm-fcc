@@ -25,14 +25,18 @@ const Details = () => {
             <h4 className="text-blue"><strong>price : <span>$</span>{price}</strong></h4>
             <p className="text-capitalize font-weight-bold mt-3 mb-0">Some info about the product:</p>
                 <p className="text-muted lead">{info}</p>
+                <div>
+                    <Link to="/">
+                        <ButtonContainer>
+                            back to products
+                        </ButtonContainer>
+                    </Link>
 
-                            </div>
-
-
-                        </div>
+                </div>
                     </div>
+                        </div>
+                            </div>
                 )
-            
             }}
         </ProductConsumer>
     );
