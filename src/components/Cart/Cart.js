@@ -1,10 +1,11 @@
 import React from 'react';
+import Title from "../Title"
 
 const Cart = () => {
     return (
-        <div>
-            <div>Welcome to Cart</div>
-        </div>
+        <section>
+            <Title name="your" title="cart" />
+        </section>
     );
 };
 
