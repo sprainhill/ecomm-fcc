@@ -29,6 +29,11 @@ class ProductProvider extends React.Component {
             })
     }
 
+    getItem = id => {
+        const product = this.state.products.find(item => item.id === id);
+        return product;
+    }
+
     handleDetail = () => {
         console.log("hello from handleDetail")
     }
