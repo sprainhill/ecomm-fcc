@@ -11,7 +11,9 @@ class ProductProvider extends React.Component {
     state = {
         products: [],
         detailProduct,
-        cart: []
+        cart: [],
+        modalOpen: true,
+        modalProduct: detailProduct
     }
 
     componentDidMount(){
@@ -56,6 +58,20 @@ class ProductProvider extends React.Component {
                 cart: [...this.state.cart, product]
             }
         }, () => console.log("addToCart state : ", this.state))
+    }
+
+    openModal = id => {
+        const product = this.getItem(id);
+        this.setState(() => {
+            return {modalProduct: product, modalOpen: true}
+        })
+    }
+
+    closeModal = () => {
+        this.setState(() => {
+            return {modalOpen: false}
+        })
+
     }
 
     render() {
