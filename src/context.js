@@ -35,7 +35,10 @@ class ProductProvider extends React.Component {
     }
 
     handleDetail = () => {
-        console.log("hello from handleDetail")
+        const product = this.getItem()
+        this.setState(() => {
+            return {detailProduct: product}
+        })
     }
 
     addToCart = id => {
