@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import PropTypes from 'prop-types';
@@ -18,7 +18,8 @@ const Product = props => {
             <Link to='/details'>
                 <img src={img} alt="product" className="card-img-top" />                </Link>
         <button className="cart-btn" disabled={inCart ? true : false} onClick={()=>{
-            value.addToCart(id)
+            value.addToCart(id);
+            value.openModal(id);
         }}>{inCart ? (<p className="text-capitalize mb-0" >in cart</p>) : (<i className="fas fa-cart-plus " />)}</button>
         </div>
         { /* footer  */} 

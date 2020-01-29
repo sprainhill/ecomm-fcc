@@ -12,7 +12,7 @@ class ProductProvider extends React.Component {
         products: [],
         detailProduct,
         cart: [],
-        modalOpen: true,
+        modalOpen: false,
         modalProduct: detailProduct
     }
 
@@ -79,7 +79,9 @@ class ProductProvider extends React.Component {
             <ProductContext.Provider value={{
                 ...this.state,
                 handleDetail: this.handleDetail,
-                addToCart: this.addToCart
+                addToCart: this.addToCart,
+                openModal: this.openModal,
+                closeModal: this.closeModal
                 
             }}>
                 {this.props.children}
