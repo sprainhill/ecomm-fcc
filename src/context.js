@@ -33,8 +33,8 @@ class ProductProvider extends React.Component {
         console.log("hello from handleDetail")
     }
 
-    addToCart = () => {
-        console.log("hello from addToCart")
+    addToCart = id => {
+        console.log(`hello from addToCart cart id is ${id}`)
     }
 
     render() {
