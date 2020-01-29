@@ -55,7 +55,7 @@ class ProductProvider extends React.Component {
             return {products: tempProducts,
                 cart: [...this.state.cart, product]
             }
-        }, () => console.log(this.state))
+        }, () => console.log("addToCart state : ", this.state))
     }
 
     render() {
