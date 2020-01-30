@@ -94,6 +94,7 @@ class ProductProvider extends React.Component {
             return {cart: []}
         }, () => {
             this.setProducts();
+            this.addTotals();
         })
 
     }
