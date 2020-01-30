@@ -20,6 +20,7 @@ const Cart = () => {
                             <Title name="your" title="cart" />
                             <CartColumns />
                             <CartList value={value} />
+                            <CartTotals value={value} />
                         </>
                     )
                 } else {
