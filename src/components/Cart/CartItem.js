@@ -17,7 +17,9 @@ const CartItem = ({item, value}) => {
             </div>
             <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0" >
                 <div className="d-flex justify-content-center">
-                    <div className="btn-black mx-1" onClick={() => decrement(id)} >-</div>
+                    <span className="btn-black mx-1 px-2" onClick={() => decrement(id)} >-</span>
+                    <span className="btn-black mx-1 px-2">{count}</span>
+                    <span className="btn-black mx-1 px-2" onClick={() => increment(id)} >+</span>
                 </div>
             </div>
             <div className="col-10 mx-auto col-lg-2" >
