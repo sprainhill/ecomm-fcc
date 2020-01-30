@@ -77,7 +77,28 @@ class ProductProvider extends React.Component {
     }
 
     increment = id => {
-        console.log("increment : ")
+        let tempCart = [...this.state.cart]
+        
+        const selectedProduct = tempCart.find(item => item.id === id);
+
+        const idx = tempCart.indexOf(selectedProduct);
+
+        const product = tempCart[idx]
+
+        product.count += 1;
+        product.total = product.count * product.price
+
+        this.setState(() => {
+            return {
+                cart: [...tempCart]
+            }
+
+        }, () => {
+            // this.setProducts();
+            this.addTotals();
+        })
+
+       
     }
 
     decrement = id => {
@@ -85,7 +106,6 @@ class ProductProvider extends React.Component {
     }
 
     removeItem = id => {
-        console.log("remove item")
         let tempProducts = [...this.state.products];
         let tempCart = [...this.state.cart];
         tempCart = tempCart.filter(item => item.id !== id);
