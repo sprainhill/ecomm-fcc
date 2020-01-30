@@ -90,6 +90,11 @@ class ProductProvider extends React.Component {
 
     clearCart = () => {
         console.log("clear cart")
+        this.setState(() => {
+            return {cart: []}
+        }, () => {
+            this.setProducts();
+        })
 
     }
 
