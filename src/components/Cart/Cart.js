@@ -8,7 +8,7 @@ import { ProductConsumer } from "../../context"
 
 
 
-const Cart = () => {
+const Cart = props => {
     return (
         <section>
         <ProductConsumer>
@@ -20,7 +20,7 @@ const Cart = () => {
                             <Title name="your" title="cart" />
                             <CartColumns />
                             <CartList value={value} />
-                            <CartTotals value={value} />
+                            <CartTotals history={props.history} value={value} />
                         </>
                     )
                 } else {

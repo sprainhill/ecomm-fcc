@@ -128,10 +128,6 @@ class ProductProvider extends React.Component {
 
         }
 
-
-
-
-
     }
 
     removeItem = id => {
