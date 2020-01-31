@@ -9,7 +9,7 @@ const ProductList = () => {
         <>
         <div className="py-5">
             <div className="container">
-                    <Title name="our" title="title" />
+                    <Title name="Rory's" title="Store" />
             </div>
             <div className="row ml-5" >
                 <ProductConsumer>
